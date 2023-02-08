@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #212121;
+    font-family: Roboto, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background: #e7e7e7;
 }
+
+header a {
+    color: white;
+}
+
+.content-wrapper {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 100px 70px 0;
+}
+
+.projects-header {
+    padding-top: 30px;
+}
+
+.table-wrapper {
+    margin-top: 25px;
+}
+
+.marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 0 0 1px 1px rgba(161, 161, 161, 0.53);
+}
+
+.marker.circle {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+}
+
+.marker.circle.active {
+    background: green;
+}
+
+.color-element {
+    width: 50px;
+    height: 30px;
+}
+
+.color-element.active {
+    scale: 1.2;
+    box-shadow: 0 0 6px 3px #c3c3c3;
+}
+
